@@ -29,16 +29,18 @@ android {
 }
 
 dependencies {
-    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.6.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.7.1'
+ //   implementation 'com.mapbox.maps:android:11.7.2'
     implementation "com.google.android.gms:play-services-location:20.0.0"
-    implementation "com.mapbox.navigation:android:2.2.2"
-    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-offline-v9:0.8.0'
+//    implementation "com.mapbox.navigation:android:2.2.2"
+//    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-offline-v9:0.8.0'
     implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-annotation-v9:0.9.0'
-    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-markerview-v9:0.4.0'
+//    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-markerview-v9:0.4.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
+
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+  //  testImplementation 'junit:junit:4.13.2'
+   // androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
