@@ -94,8 +94,8 @@ public class MainActivity extends AppCompatActivity {
         // Create a bounding box for the offline region
       //  mapView.onCreate(savedInstanceState);
         LatLngBounds latLngBounds = new LatLngBounds.Builder()
-                .include(new LatLng(45.748010, 5.097401)) // Northeast
-                .include(new LatLng(45.703593, 5.070474)) // Southwest
+                .include(new LatLng(32.365157139961234, -84.97099257511302)) // Northeast
+                .include(new LatLng(32.314282288977296, -85.01381581263415)) // Southwest
                 .build();
 
 
@@ -268,7 +268,7 @@ public class MainActivity extends AppCompatActivity {
         OfflineTilePyramidRegionDefinition definition = new OfflineTilePyramidRegionDefinition(
            Style.SATELLITE,
                 latLngBounds,
-                14,
+                15,
                 19,
                 4.0f,false)
                 ;
@@ -276,7 +276,7 @@ public class MainActivity extends AppCompatActivity {
         byte[] metadata;
         try {
             JSONObject jsonObject = new JSONObject();
-            jsonObject.put("Lyon", "Airport");
+            jsonObject.put("Lawson Army Airfield (KLSF)", "Airport");
             String json = jsonObject.toString();
             metadata = json.getBytes();
         } catch (Exception exception) {
